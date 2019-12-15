@@ -17,7 +17,7 @@ def brea(l,a):
 
 def per(s,n):
     t = ((2*(len(list(set(s) & set(n))))) / (len(s)+len(n)))
-    print("fraction matched:", t)
+    print ("fraction matched:", t)
     return t
 
 def cal(l,b):
@@ -31,6 +31,8 @@ def cal(l,b):
     o = k[0]
     print(o)
     j = 0
+    for i in k:
+        print(i)
     for i in range(len(k)):
         s *= 0
         s = biagram(k[i],s)
@@ -41,8 +43,8 @@ def cal(l,b):
             o = k[i]
     print ("the most matching word is:", o)
 
-l = raw_input("enter a sentence:")
-b = raw_input("enter the word to search for a match:")
+l = input("enter a sentence:")
+b = input("enter the word to search for a match:")
 cal(l, b)
 
 
